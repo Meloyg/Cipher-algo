@@ -1,0 +1,14 @@
+Caesar Cipher
+https://www.dcode.fr/caesar-cipher
+
+Vigenère Cipher
+https://www.dcode.fr/vigenere-cipher
+
+Substitution
+https://www.dcode.fr/monoalphabetic-substitution
+
+Columnar Transposition Cipher
+https://www.dcode.fr/columnar-transposition-cipher
+
+Railway Fence Cipher
+https://www.dcode.fr/rail-fence-cipher
