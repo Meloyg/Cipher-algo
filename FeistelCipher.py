@@ -7,16 +7,16 @@
 # encryptionRound = 2
 # decryptionRound = 1
 
-keys = [0xE233, 0x1355]
-L0 = 0x243B
-R0 = 0x5050
+keys = [0x7234, 0xA240]
+L0 = 0x3203
+R0 = 0x407E
 encryptionRound = 2
 decryptionRound = 2
 
 # keys = [0xA227, 0x5E76]
 # L0 = 0xB879
 # R0 = 0x8B51
-# encryptionRound = 2
+# encryptionRound = 1
 # decryptionRound = 2
 
 def main():

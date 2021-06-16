@@ -1,20 +1,28 @@
 # https://cws.auckland.ac.nz/CWS/CourseWorkService.svc/cwt?cid=BlockCiphers
 
-plainText = [0xA79A, 0x6073, 0xC4BD]
-key = 0xBABE
-initVector = 0xD00D
-
-
-# plainText = [0xB753, 0x7F3C, 0x534D]
-# key = 0xBABE
+# plainText = [0xC13B, 0x981F, 0xD7A8]
+# key = 0xABBA
 # initVector = 0xD00D
+
+# plainText = [0xEF51, 0x5B39, 0xE472]
+# key = 0xABBA
+# initVector = 0xBABE
+
+# plainText = [0x6604, 0x8EFF, 0x7DA5]
+# key = 0xABBA
+# initVector = 0xBABE
+
+plainText = [0xB823, 0x68EA, 0xAB77]
+key = 0xABBA
+initVector = 0xBABE
+
 
 
 def main():
-    print(ecb())
-    print(cbc())
+    # print(ecb())
+    # print(cbc())
     print(pcbc())
-    print(cfb())
+    # print(cfb())
 
 
 # ECB

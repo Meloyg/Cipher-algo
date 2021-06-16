@@ -11,23 +11,64 @@ list2 = []
 list3 = []
 buffer = ""
 count = 0
+for p in range(int(len(lst1) / 2)):
+    for i in list1:
+        for j in i:
+            if count < 2:
+                buffer += j
+                count += 1
+            else:
+                list2.append(buffer)
+                buffer = ""
+                count = 0
+                break
+    list3.append(list2)
+    list2 = []
+    for x in range(len(list1)):
+        list1[x] = list1[x][2:]
 
-for i in list1:
-    for j in i:
-        if count < 2:
-            buffer += j
-            count += 1
-        else:
-            list2.append(buffer)
-            buffer = ""
-            count = 0
-            break
 
-for i in range(65, 91):
-    list4 = ""
-    print(chr(i))
-    for j in list2:
-        value = i ^ int(j, 16)
-        print(chr(value))
+c = 26
+l = lst1 + lst2 + lst3 + lst4 + lst5 + lst6 + lst7
+lis = []
+x = ""
 
-print(list2)
+while len(l) != 0:
+    x = l[:52]
+    lis.append(x)
+    x = ""
+    l = l[52:]
+
+count = 0
+k = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+check = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+         'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
+         'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+answerCheck = []
+count = 0
+output = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+
+for i in check:
+    answerCheck.append(hex(ord(i)))
+
+for i in lis:
+    for ii in range(0, len(i), 2):
+        k[count].append(int(i[ii] + i[ii + 1], 16))
+        count += 1
+    count = 0
+
+ke = ""
+count2 = 0
+count = 0
+
+# for i in range(len(list3)):
+#     print("{}: {}".format(i, list3[i]))
+
+for i in k[12]:
+    print(hex(i), chr(i ^ (0x8F ^ 0x20)))
+
+x = 0x2D
+
+print(chr(x ^ x ^ 0x20))
+
+
