@@ -17,7 +17,6 @@ key = 0xABBA
 initVector = 0xBABE
 
 
-
 def main():
     # print(ecb())
     # print(cbc())
@@ -31,6 +30,8 @@ def ecb():
     return ecbStep1[2:].upper()
 
 # CBC
+
+
 def cbc():
     bufferHex = None
     cipherText = []
@@ -45,6 +46,8 @@ def cbc():
     return cipherText
 
 # PCBC
+
+
 def pcbc():
     newInitVector = None
     buffer1 = None
@@ -64,6 +67,8 @@ def pcbc():
     return cipherText
 
 # CFB
+
+
 def cfb():
     buffer1 = None
     cipherText = []
@@ -76,5 +81,6 @@ def cfb():
         buffer1 = cfbStep3
         cipherText.append(hex(cfbStep3)[2:].upper())
     return cipherText
+
 
 main()

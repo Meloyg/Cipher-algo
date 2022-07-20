@@ -24,4 +24,3 @@ for i in string:
 
     new_result += str(hex(letter))[2:]
 print(new_result.upper())
-

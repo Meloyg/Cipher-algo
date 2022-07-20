@@ -1,5 +1,7 @@
 # Cipher Algorithm in Python
 
+> COMPSCI 215 : Data Communications and Security
+
 - AES
 - Block Ciphers — Modes of Operation
 
@@ -17,5 +19,3 @@
 - One Time Pad
 - Steganalysis
 - Steganography
-
-COMPSCI 215 : Data Communications and Security

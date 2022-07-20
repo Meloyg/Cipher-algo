@@ -19,21 +19,27 @@ decryptionRound = 2
 # encryptionRound = 1
 # decryptionRound = 2
 
+
 def main():
 
     encryptionL0, encryptionR0 = encryption()
-    encryptionL0, encryptionR0 = get_correct_hex(encryptionL0), get_correct_hex(encryptionR0)
-    print("encryption: {} {}".format(hex(encryptionL0)[2:].upper(), hex(encryptionR0)[2:].upper()))
-
+    encryptionL0, encryptionR0 = get_correct_hex(
+        encryptionL0), get_correct_hex(encryptionR0)
+    print("encryption: {} {}".format(hex(encryptionL0)
+          [2:].upper(), hex(encryptionR0)[2:].upper()))
 
     decryptionL0, decryptionR0 = decryption((encryptionL0), (encryptionR0))
-    decryptionL0, decryptionR0 = get_correct_hex(decryptionL0), get_correct_hex(decryptionR0)
-    print("decryptionRound: {} {}".format(hex(decryptionL0)[2:].upper(), hex(decryptionR0)[2:].upper()))
+    decryptionL0, decryptionR0 = get_correct_hex(
+        decryptionL0), get_correct_hex(decryptionR0)
+    print("decryptionRound: {} {}".format(hex(decryptionL0)
+          [2:].upper(), hex(decryptionR0)[2:].upper()))
+
 
 def get_correct_hex(hex_num):
     new_hex = "0x" + (str(hex(hex_num))[::-1][:4][::-1])
     a_int = int(new_hex, 16)
     return a_int
+
 
 def encryption():
     l0 = L0
@@ -53,6 +59,7 @@ def encryption():
         return l0, r0
     else:
         return r0, l0
+
 
 def decryption(encryptionL0, encryptionR0):
     l0 = encryptionR0
@@ -74,7 +81,3 @@ def decryption(encryptionL0, encryptionR0):
 
 
 main()
-
-
-
-

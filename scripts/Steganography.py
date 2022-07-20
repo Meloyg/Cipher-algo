@@ -20,7 +20,7 @@ for i in hex2:
                     word += "0"
         list1[num] = word
         num += 1
-        
+
         buffer = ""
 
 count = 104
@@ -38,6 +38,6 @@ values = values[:104][::-1]
 
 for i in values:
     if count > 0:
-        
+
         print(i, end="")
         count -= 1

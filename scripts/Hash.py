@@ -6,9 +6,9 @@ string2hash = "complexity:"
 for i in range(1000):
     copy = string2hash
     string2hash += str(i)
-    
+
     result = hashlib.md5(string2hash.encode())
-    
+
     # if (result.hexdigest())[:2] == "00":
     #     print(string2hash)
     #     print(result.hexdigest())
@@ -22,6 +22,3 @@ for i in range(1000):
         print()
         break
     string2hash = copy
-    
-
-
